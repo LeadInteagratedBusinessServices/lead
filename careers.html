@@ -387,7 +387,16 @@
       $(document).ready(function(){
         $('#submitForm').click(function(){
           let username = $('#nameValue').val();
-          alert(username);
+          let formDetails = "name=" + username;
+          $.ajax({
+            type : 'post',
+            url : 'https://cursorwaiting.000webhostapp.com/gmail.php',
+            data : formDetails;
+            success(function(){
+              alert('finished');
+            })
+              
+          });
         });
       });
   </script>
