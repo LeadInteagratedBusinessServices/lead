@@ -139,7 +139,7 @@
 <!--             <form class="mrg-bot-40" enctype="multipart/form-data" method="post"> -->
               <div class="col-md-6 col-sm-6">
                 <label>Name:</label>
-                <input type="text" name="username" class="form-controls" placeholder="Full Name" />
+                <input type="text" name="username" id="nameValue" class="form-controls" placeholder="Full Name" />
               </div>
               <div class="col-md-6 col-sm-6">
                 <label>Email:</label>
@@ -219,7 +219,7 @@
                 <input type="file" accept=".pdf, .doc, .docx" name="profile" class="form-controls">
               </div>
               <div class="col-md-12 col-sm-12">
-                <input type="submit" class="btn theme-btn" name="submit" class="form-controls" value="Send Message" />
+                <input type="submit" id="submitForm" name="submit" class="form-controls btn theme-btn" value="Send Message" />
               </div>
 <!--             </form> -->
           </div>
@@ -385,7 +385,10 @@
     <script src="./career/js/lottieplayer.js"></script>
      <script>
       $(document).ready(function(){
-        alert("welcome");
+        $('#submitForm').click(function(){
+          let username = $('#nameValue').value;
+          alert(username);
+        });
       });
   </script>
     <!-- Javascript end-->
