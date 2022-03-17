@@ -220,8 +220,9 @@
               </div>
               <div class="col-md-12 col-sm-12">
                 <input type="submit" id="submitForm" name="submit" class="form-controls btn theme-btn" value="Send Message" />
+                <a href="https://cursorwaiting.000webhostapp.com/">-</a>
               </div>
-<!--             </form> -->
+<!--  </form> -->
           </div>
         </div>
       </div>
@@ -384,21 +385,21 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./career/js/lottieplayer.js"></script>
      <script>
-      $(document).ready(function(){
-        $('#submitForm').click(function(){
-          var username = $('#nameValue').val();
-          var formDetails = "name=" + username;
-          $.ajax({
-            type : 'POST',
-            url : 'https://cursorwaiting.000webhostapp.com/gmail.php',
-            data : formDetails,
-            success : function(){
-              alert('finished');
-              console.log(formDetails);
-            }          
-          });
-        });
-      });
+//       $(document).ready(function(){
+//         $('#submitForm').click(function(){
+//           var username = $('#nameValue').val();
+//           var formDetails = "name=" + username;
+//           $.ajax({
+//             type : 'POST',
+//             url : 'https://cursorwaiting.000webhostapp.com/gmail.php',
+//             data : formDetails,
+//             success : function(){
+//               alert('finished');
+//               console.log(formDetails);
+//             }          
+//           });
+//         });
+//       });
   </script>
     <!-- Javascript end-->
 </body>
