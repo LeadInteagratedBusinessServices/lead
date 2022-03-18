@@ -179,7 +179,7 @@
                 </div>  -->
               <div class="col-md-6 col-sm-6">
                 <label>Position:</label>
-                <select id="SubCat" name="position" class="form-controls">
+                <select id="SubCat" name="position" class="form-controls" id="position">
                   <option selected disabled>Select Job Position</option>
                   <option>Mobile Application Developer</option>
                   <option>Web Developer</option>
@@ -193,30 +193,30 @@
               <div class="col-md-6 col-sm-6">
                 <label>Experience:</label>
                 <input type="text" class="form-controls" placeholder="Please enter" style="width: 100%;"
-                  name="experience" />
+                  name="experience" id="experience"/>
               </div>
               <div class="col-md-6 col-sm-6">
                 <label>Designation:</label>
                 <input type="text" class="form-controls" placeholder="Please enter" style="width: 100%;"
-                  name="designation" />
+                  name="designation" id="designation"/>
               </div>
               <div class="col-md-6 col-sm-6">
                 <label>Expected Salary:</label>
                 <input type="text" class="form-controls" placeholder="Please enter" style="width: 100%;"
-                  name="exp_salary" />
+                  name="exp_salary" id="expsalary"/>
               </div>
               <div class="col-md-6 col-sm-6">
                 <label>Where did you hear about us?</label><br />
-                <input type="radio" id="careerfair" name="getfrom" value="careerfair">
+                <input type="radio" id="careerfair" name="getfrom" value="careerfair" id="getform">
                 <label for="careerfair">Career Fair</label> &nbsp;
-                <input type="radio" id="newspaperad" name="getfrom" value="newspaperad">
+                <input type="radio" id="newspaperad" name="getfrom" value="newspaperad" id="getform">
                 <label for="newspaperad">Newspaper Ads</label> <br />
-                <input type="radio" id="socialmedia" name="getfrom" value="socialmedia">
+                <input type="radio" id="socialmedia" name="getfrom" value="socialmedia" id="getform">
                 <label for="socialmedia">Social Media</label>
               </div>
               <div class="col-md-12 col-sm-12">
                 <label style="margin-top: 20px;">Please upload your resume: </label>
-                <input type="file" accept=".pdf, .doc, .docx" name="profile" class="form-controls">
+                <input type="file" accept=".pdf, .doc, .docx" name="profile" class="form-controls" id="resume">
               </div>
               <div class="col-md-12 col-sm-12">
                 <input type="submit" id="submitForm" name="submit" class="form-controls btn theme-btn" value="Send Message" />
